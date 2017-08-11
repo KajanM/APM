@@ -46,7 +46,7 @@
               margin: 2px;">
           </td>
           <td>{{product.productName}}</td>
-          <td>{{product.productCode | lowercase}}</td>
+          <td>{{product.productCode | uppercase | convertToSpaces: '-'}}</td>
           <td>{{product.releaseDate}}</td>
           <td>{{product.price | currency:'USD':true:'1.2-2'}}</td>
           <td>{{product.starRating}}</td>

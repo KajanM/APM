@@ -8,9 +8,12 @@ import {ProductService} from "./products/product.service";
   providers: [ProductService]
 })
 export class AppComponent {
-  private pageTitle;
+  get pageTitle() {
+    return this._pageTitle;
+  }
+  private _pageTitle;
 
   constructor() {
-    this.pageTitle = 'Acme Product Management';
+    this._pageTitle = 'Acme Product Management';
   }
 }

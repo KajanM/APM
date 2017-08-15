@@ -8,5 +8,5 @@ import {ProductService} from "./products/product.service";
   providers: [ProductService]
 })
 export class AppComponent {
-  title = 'Acme Product Management';
+  pageTitle = 'Acme Product Management';
 }
